@@ -1,3 +1,4 @@
+
 void calculate_elapsed_time() {
   currentMillis = millis();        // get the current number of milliseconds
   seconds = currentMillis / 1000;  // convert milliseconds to seconds

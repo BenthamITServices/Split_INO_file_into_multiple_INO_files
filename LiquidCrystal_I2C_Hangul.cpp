@@ -23,8 +23,6 @@ inline void LiquidCrystal_I2C_Hangul::write(uint8_t value) {
 #endif
 #include "Wire.h"
 
-
-
 // When the display powers up, it is configured as follows:
 //
 // 1. Display clear
@@ -222,14 +220,11 @@ void LiquidCrystal_I2C_Hangul::backlight(void) {
   expanderWrite(0);
 }
 
-
-
 /*********** mid level commands, for sending data/cmds */
 
 inline void LiquidCrystal_I2C_Hangul::command(uint8_t value) {
   send(value, 0);
 }
-
 
 /************ low level data pushing commands **********/
 
@@ -259,7 +254,6 @@ void LiquidCrystal_I2C_Hangul::pulseEnable(uint8_t _data) {
   expanderWrite(_data & ~En);  // En low
   delayMicroseconds(50);       // commands need > 37us to settle
 }
-
 
 // Alias functions
 

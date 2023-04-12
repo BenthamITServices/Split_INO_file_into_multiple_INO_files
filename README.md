@@ -1,5 +1,4 @@
 Example using LiquidCrystal I2C Hangul
-
 name=LiquidCrystal_I2C_Hangul   
 version=2.0.0
 author=Junwha Hong, Dohun Kim, HyungHo Kim

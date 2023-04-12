@@ -7,7 +7,6 @@
 #include <Wire.h>
 #include "Arduino.h"
 
-
 // commands
 #define LCD_CLEARDISPLAY 0x01
 #define LCD_RETURNHOME 0x02
@@ -109,7 +108,6 @@ public:
   uint8_t init_bargraph(uint8_t graphtype);
   void draw_horizontal_graph(uint8_t row, uint8_t column, uint8_t len, uint8_t pixel_col_end);
   void draw_vertical_graph(uint8_t row, uint8_t column, uint8_t len, uint8_t pixel_col_end);
-
 
 private:
   int printing(byte cho, byte jung, byte jong, byte hanCursor, byte charNum);
